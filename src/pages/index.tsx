@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Navbar } from "@/Components/Common/Navbar";
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
@@ -14,9 +14,16 @@ const geistMono = Geist_Mono({
 export default function Home() {
   return (
     <div
-      className={`${geistSans.className} ${geistMono.className} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
+      className={`${geistSans.className} ${geistMono.className}  font-[family-name:var(--font-geist-sans)]`}
     >
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+      <main className="h-screen w-screen flex flex-col">
+        <div>
+          <Navbar />
+        </div>
+        <div className="flex flex-1">cuerpo</div>
+        <div>footer</div>
+      </main>
+      {/* <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -109,7 +116,7 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
-      </footer>
+      </footer> */}
     </div>
   );
 }
