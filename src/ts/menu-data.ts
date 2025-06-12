@@ -12,7 +12,9 @@ import {
 export const menuData: IMenuData[] = [
   { nombre: "Principal", link: "/", icon: FaHome },
   { nombre: "Libros", link: "/libros", icon: FaBook },
-  { nombre: "Nosotros", link: "/nosotros", icon: FaUserTie },
+  { nombre: "Casas", link: "/casas", icon: FaUserTie },
+  { nombre: "Personajes", link: "/personajes", icon: FaUserTie },
+  { nombre: "Hechizos", link: "/hechizos", icon: FaUserTie },
 ];
 
 export type IMenuData = {
