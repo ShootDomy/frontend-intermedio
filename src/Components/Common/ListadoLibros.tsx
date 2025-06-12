@@ -30,7 +30,7 @@ export const ListadoLibros = () => {
     // </div>
 
     <div className="flex flex-col gap-4 w-full items-center justify-center h-full">
-      <div className="grid grid-cols-4 gap-4 w-full">
+      <div className="grid grid-cols-4 gap-4">
         {libros.map((item, idx) => (
           <div
             key={item.index}
