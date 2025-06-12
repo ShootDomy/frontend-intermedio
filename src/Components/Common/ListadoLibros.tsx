@@ -8,7 +8,7 @@ export const ListadoLibros = () => {
 
   useEffect(() => {
     const handleObtenerLibros = async () => {
-      librosAPI.obtenerLibros().then((res) => {
+      librosAPI.obtenerLibros(3).then((res) => {
         console.log("Datos => ", res);
         setLibros(res);
       });
@@ -20,11 +20,30 @@ export const ListadoLibros = () => {
   }, [libros]);
 
   return (
+    // <div className="flex flex-col gap-4 w-full items-center justify-center h-full">
+    //   {/* <h1 className="text-2xl font-bold text-center">Listado de libros</h1> */}
+    //   <div className="grid grid-cols-4 gap-4">
+    //     {libros.map((item) => (
+    //       <CardLibro key={item.index} item={item} />
+    //     ))}
+    //   </div>
+    // </div>
+
     <div className="flex flex-col gap-4 w-full items-center justify-center h-full">
-      {/* <h1 className="text-2xl font-bold text-center">Listado de libros</h1> */}
-      <div className="grid grid-cols-4 gap-4">
-        {libros.map((item) => (
-          <CardLibro key={item.index} item={item} />
+      <div className="grid grid-cols-4 gap-4 w-full">
+        {libros.map((item, idx) => (
+          <div
+            key={item.index}
+            className={
+              libros.length === 3
+                ? idx === 1
+                  ? "col-span-2"
+                  : "col-span-1"
+                : "col-span-1"
+            }
+          >
+            <CardLibro item={item} />
+          </div>
         ))}
       </div>
     </div>
