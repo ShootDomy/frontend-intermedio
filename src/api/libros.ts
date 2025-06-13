@@ -1,16 +1,20 @@
-import { Libros } from "@/ts/models/libros";
+import { ILibros, LibrosParams } from "@/ts/models/ILibros";
 import { BASE_URL, LENGUAJE } from "@/utils/constans";
 
 export const librosAPI = {
-  obtenerLibros: async (max?: number) => {
+  obtenerLibros: async (params: LibrosParams) => {
     try {
-      const query = max ? `?max=${max}` : "";
+      const url = new URL(`${BASE_URL}${LENGUAJE}/books`);
 
-      const res = await fetch(`${BASE_URL}${LENGUAJE}/books${query}`).then(
-        async (res) => {
-          return (await res.json()) as Libros[];
+      Object.entries(params).forEach(([key, value]) => {
+        if (value) {
+          url.searchParams.append(key, String(value));
         }
-      );
+      });
+
+      const res = await fetch(url.href).then(async (res) => {
+        return (await res.json()) as ILibros[];
+      });
       return res;
     } catch (error) {
       console.log(error);
