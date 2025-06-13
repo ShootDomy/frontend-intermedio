@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       new URL(
-        "https://raw.githubusercontent.com/fedeperin/potterapi/main/public/images/covers/**"
+        "https://raw.githubusercontent.com/fedeperin/potterapi/main/public/images/**"
       ),
     ],
   },
