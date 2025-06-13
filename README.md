@@ -1,40 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🚀 Frontend Intermedio
 
-## Getting Started
+![React](https://img.shields.io/badge/React-%5E18.2.0-blue?logo=react&style=for-the-badge)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-%5E3.4.0-06B6D4?logo=tailwindcss&style=for-the-badge)
+![Jest](https://img.shields.io/badge/Testing-Jest-C21325?logo=jest&style=for-the-badge)
+![npm](https://img.shields.io/badge/npm-v9.0.0-CB3837?logo=npm&style=for-the-badge)
+[![codecov](https://codecov.io/gh/ShootDomy/frontend-intermedio/branch/main/graph/badge.svg)](https://codecov.io/gh/ShootDomy/frontend-intermedio)
 
-First, run the development server:
+
+Repositorio creado para reforzar y aplicar **conceptos básicos e intermedios de React**, incluyendo consumo de APIs, estilos con Tailwind CSS y pruebas con Jest.
+
+---
+
+## 📚 Tecnologías utilizadas
+
+- ⚛️ **React** – Biblioteca para construir interfaces de usuario.
+- 🎨 **Tailwind CSS** – Framework de utilidades para estilizar componentes.
+- 🌐 **Fetch API / Axios** – Para consumir APIs externas.
+- 🧪 **Jest** – Para pruebas unitarias.
+- 📦 **npm** – Como gestor de paquetes y scripts.
+
+---
+
+## 🧰 Instalación y ejecución
+
+1. **Clona el repositorio**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/ShootDomy/frontend-intermedio.git
+cd frontend-intermedio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instala las dependencias
+```bash
+npm install
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+3. Ejecuta la aplicación en desarrollo
+```bash
+npm start
+```
+La aplicación estará disponible en: `http://localhost:3000`
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+4. Correr pruebas
+```bash
+npm test
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## 🧪 Funcionalidades principales
+- Uso de componentes funcionales y hooks.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Consumo de datos desde una API externa.
 
-## Learn More
+- Estilos responsivos con Tailwind.
 
-To learn more about Next.js, take a look at the following resources:
+- Testing básico con Jest.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## 🎯 Objetivo
+Este proyecto tiene fines educativos, enfocado en practicar el stack moderno de frontend y fortalecer la lógica de desarrollo en React con buenas prácticas.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🤝 Contribuidores
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<table> <tr> <td align="center"> <a href="https://github.com/ShootDomy"> <img src="https://avatars.githubusercontent.com/ShootDomy" width="150px" alt="ShootDomy GitHub profile picture" />
+<br /> <sub><b>ShootDomy</b></sub><br /> <sup>💻 🎨 📝</sup> </a> </td> <td align="center"> <a href="https://github.com/Luisfql"> <img src="https://avatars.githubusercontent.com/Luisfql)" width="100px;" alt="Luisfql"/><br /> <sub><b>Luisfql</b></sub><br /> <sup>💻 🎨 📝</sup> </a> </td> </tr> </table>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+## 🙋‍♀️ Contactos
+
+**Doménica Vintimilla**
+
+[![GitHub](https://img.shields.io/badge/GitHub-ShootDomy-181717?logo=github&style=for-the-badge)](https://github.com/ShootDomy)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Doménica%20Vintimilla-blue?logo=linkedin&style=for-the-badge)]([https://www.linkedin.com/in/tu-usuario](https://www.linkedin.com/in/domenica-vintimilla-24a735245/))
+[![Email](https://img.shields.io/badge/Email-canizaresdomenica4@gmail.com-red?logo=gmail&style=for-the-badge)](mailto:canizaresdomenica4@gmail.com)
+
+
+
+
