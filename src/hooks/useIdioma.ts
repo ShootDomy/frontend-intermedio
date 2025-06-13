@@ -25,9 +25,12 @@ export const useIdioma = () => {
     await localStorage.setItem("idioma", JSON.stringify(idioma));
     setIdioma(idioma);
     // window.location.reload();
-    queryClient.invalidateQueries({
-      queryKey: ["casa", "listado"],
-    });
+    queryClient
+      .invalidateQueries
+      //   {
+      //   queryKey: ["casa", "listado"],
+      // }
+      ();
   };
 
   return {

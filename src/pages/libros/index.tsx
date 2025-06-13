@@ -22,7 +22,7 @@ const Libros = () => {
 
   return (
     <MainLayout>
-      <div className="flex flex-col gap-4 w-full items-center justify-center h-full ">
+      <div className="flex flex-col gap-4 w-full items-center justify-center h-full">
         {/* <h1 className="text-2xl font-bold text-center">Listado de libros</h1> */}
         <div className="h-full grid grid-cols-2 gap-4">
           {libros.map((item) => (
