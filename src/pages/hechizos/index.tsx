@@ -44,7 +44,7 @@ const Hechizos = () => {
             <TableBody>
               {data.map((item) => (
                 <TableRow key={item.index}>
-                  <TableCell>{item.index}</TableCell>
+                  <TableCell>{item.index + 1}</TableCell>
                   <TableCell className="font-medium">{item.spell}</TableCell>
                   <TableCell>{item.use}</TableCell>
                 </TableRow>

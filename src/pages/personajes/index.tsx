@@ -47,11 +47,11 @@ const Personajes = () => {
               {data.map((item) => (
                 <CarouselItem
                   key={item.index}
-                  className="md:basis-1/2 lg:basis-1/3"
+                  className="md:basis-1/2 lg:basis-1/3 hover:cursor-default"
                 >
                   <div className="p-1">
                     <Card>
-                      <CardContent className="flex flex-col aspect-square items-center justify-center p-6">
+                      <CardContent className="flex flex-col aspect-square items-center justify-center p-6 pointer-events-none">
                         <strong className="text-3xl font-semibold text-center">
                           {item.fullName}
                         </strong>
