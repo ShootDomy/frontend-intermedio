@@ -14,7 +14,7 @@ interface CardCasasProps {
   tamaño: number;
 }
 
-export const CardPersonaje: React.FC<CardCasasProps> = ({ item, tamaño }) => {
+export const CardPersonaje: React.FC<CardCasasProps> = () => {
   return (
     <Carousel
       opts={{
